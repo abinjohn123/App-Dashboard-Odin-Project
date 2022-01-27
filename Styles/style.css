@@ -23,12 +23,19 @@ a:visited {
 }
 
 .icon {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.--light {
   stroke: var(--icon-clr);
   fill: var(--icon-clr);
-  height: 2rem;
+}
+.--dark {
+  stroke: var(--dark-text);
 }
 .icon--header {
   height: 4rem !important;
+  width: 4rem !important;
 }
 
 .app-container {
@@ -73,13 +80,13 @@ a:visited {
   grid-template-columns: auto;
   grid-template-rows: repeat(6, auto);
   row-gap: 2.8rem;
+  justify-content: start;
 }
 
 .menu-link {
   display: grid;
-  grid-template-columns: 2rem auto;
-
+  grid-template-columns: auto auto;
   column-gap: 2.8rem;
-
+  justify-content: start;
   align-items: center;
 }
