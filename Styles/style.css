@@ -22,10 +22,7 @@ a:visited {
   color: var(--light-text);
 }
 
-.icon {
-  height: 2.2rem;
-  width: 2.2rem;
-}
+/* HELPERS */
 .--light {
   stroke: var(--icon-clr);
   fill: var(--icon-clr);
@@ -33,6 +30,15 @@ a:visited {
 .--dark {
   stroke: var(--dark-text);
 }
+.--top-header {
+  height: 2rem !important;
+}
+
+.icon {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
 .icon--header {
   height: 4rem !important;
   width: 4rem !important;
@@ -89,4 +95,101 @@ a:visited {
   column-gap: 2.8rem;
   justify-content: start;
   align-items: center;
+}
+
+/* *********************** */
+/* TOP HEADER */
+/* *********************** */
+.main-top-header {
+  background-color: var(--card-bg);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: start;
+  row-gap: 3rem;
+
+  padding: 1.8rem 5.2rem 1.8rem 3rem;
+  /* background-color: bisque; */
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  column-gap: 1.2rem;
+  align-items: center;
+}
+
+.search-box-input {
+  outline: none;
+  border: none;
+  background-color: var(--bgc);
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.8rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.--small {
+  height: 3.6rem;
+}
+
+.--large {
+  height: 5.2rem;
+}
+
+.profile-corner {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  column-gap: 1.8rem;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 1.4rem;
+}
+
+.welcome-message {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 0.6rem;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.full-Id {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.action-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  color: var(--light-text);
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 16px;
+  font-weight: 500;
 }
