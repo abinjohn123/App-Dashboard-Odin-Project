@@ -13,7 +13,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a:link,
@@ -38,6 +38,10 @@ a:visited {
   color: var(--grey-text);
 }
 
+.drop-shadow {
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
 .icon {
   height: 2.2rem;
   width: 2.2rem;
@@ -55,7 +59,6 @@ a:visited {
 
 .app-container {
   width: 1200px;
-  height: 100vh;
   display: grid;
   grid-template-columns: 0.8fr 3fr;
 
